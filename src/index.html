@@ -4,84 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <style>
-      * {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      nav {
-        background-color: bisque;
-        height: 50px;
-      }
-      .jumbo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .menu {
-        display: flex;
-        flex-direction: row;
-      }
-      li {
-        margin: 10px;
-        text-decoration: none;
-        list-style-type: none;
-      }
-
-      footer {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(7, 5, 88);
-        color: antiquewhite;
-        justify-content: space-between;
-        padding: 15px;
-      }
-      .caja {
-        height: 200px;
-
-        border: 2px solid black;
-      }
-      .caja img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      #news {
-        margin: auto;
-        height: 700px;
-        width: 900px;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .news-noticia {
-        border: 3px solid black;
-        height: 320px;
-        width: 400px;
-        padding: 10px;
-      }
-
-      .news-noticia__header {
-        height: 170px;
-        width: 400px;
-      }
-
-      .news-noticia__header img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-      .news-noticia__body h2 {
-        margin: 10px;
-      }
-      .news-noticia__body p {
-        margin: 10px;
-      }
-    </style>
     <header>
       <nav>
         <ul class="jumbo">
@@ -98,6 +23,59 @@
       </div>
     </header>
 
+    <div id="services">
+      <div class="services-servicio">
+        <div class="services-servicio__header">
+          <img
+            src="https://s3.amazonaws.com/thumbnails.venngage.com/template/bcf804f5-e6b0-4389-8c44-d64482f922dc.png"
+          />
+        </div>
+        <div class="services-servicio__body">
+          <h2><a href="">Planeación</a></h2>
+          <hr />
+          <p>
+            Ha llegado el momento de disfrutar de unas merecidas vacaciones o un
+            viaje corto en un fin de semana. En nuestro buscador de “Vuelo +
+            Hotel” se puede comprar el tiquete y el alojamiento en una sola
+            reserva
+          </p>
+        </div>
+      </div>
+      <div class="services-servicio">
+        <div class="services-servicio__header">
+          <img
+            src="https://img.favpng.com/18/4/19/travel-logo-blog-illustration-tour-du-monde-png-favpng-1z6hfnrR46jndnAVWvwVkCsyt.jpg"
+          />
+        </div>
+        <div class="services-servicio__body">
+          <h2><a href="">Reserva</a></h2>
+          <hr />
+          <p>
+            Debe seleccionar el destino al cual quiere ir, fechas del viaje, y
+            elegir la combinación que prefiere entre los paquetes vacacionales
+            de “Vuelo + Hotel”. Hay diversas opciones para disfrutar de una
+            experiencia inolvidable.
+          </p>
+        </div>
+      </div>
+      <div class="services-servicio">
+        <div class="services-servicio__header">
+          <img
+            src="https://i.pinimg.com/originals/1b/8e/62/1b8e628911c42bb354ff8c60e2cd2f97.jpg"
+          />
+        </div>
+        <div class="services-servicio__body">
+          <h2><a href="">Hotel</a></h2>
+          <hr />
+          <p>
+            Seleccione: Las habitaciones (Máximo 3) Huéspedes (Máximo 9) entre
+            adultos y niños El precio más bajo (por habitación, por noche) La
+            tarifa, según el tipo de habitación elegida
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div id="news">
       <div class="news-noticia">
         <div class="news-noticia__header">
@@ -107,13 +85,12 @@
           />
         </div>
         <div class="news-noticia__body">
-          <h2><a href="">Titulo</a></h2>
+          <h2><a href="">Pandemia</a></h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis
-            atque eligendi numquam aliquid explicabo dolorem totam minima nemo
-            corrupti! Unde, adipisci. Perspiciatis distinctio possimus
-            exercitationem accusantium debitis iste vero!
+            Hace décadas, Italia implementó un modelo de hospedaje conocido como
+            «hotel disperso». Este implica la instalación de un solo hotel, pero
+            en varios edificios de un pueblo casi abandonado.
           </p>
         </div>
       </div>
@@ -124,13 +101,12 @@
           />
         </div>
         <div class="news-noticia__body">
-          <h2><a href="">Titulo</a></h2>
+          <h2><a href="">Venecia</a></h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis
-            atque eligendi numquam aliquid explicabo dolorem totam minima nemo
-            corrupti! Unde, adipisci. Perspiciatis distinctio possimus
-            exercitationem accusantium debitis iste vero!
+            ¿Tienes pensado visitar Venecia? Toma en cuenta esta nueva medida
+            que anunciaron las autoridades para los turistas. La tarifa entrará
+            en vigor el 1 de enero del 2022.
           </p>
         </div>
       </div>
@@ -141,7 +117,7 @@
           />
         </div>
         <div class="news-noticia__body">
-          <h2><a href="">Titulo</a></h2>
+          <h2><a href="">Otro</a></h2>
           <hr />
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis
@@ -158,6 +134,59 @@
           />
         </div>
         <div class="news-noticia__body">
+          <h2><a href="">Confinamiento</a></h2>
+          <hr />
+          <p>
+            Italia registra un nuevo récord de contagios de coronavirus, pero el
+            gobierno se niega a hacer una cuarentena total por el daño que le
+            haría a la economía. Acá el reporte de Javier Romero.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="team">
+      <div class="team-persona">
+        <div class="team-persona__header">
+          <img
+            src="https://s3.amazonaws.com/thumbnails.venngage.com/template/bcf804f5-e6b0-4389-8c44-d64482f922dc.png"
+          />
+        </div>
+        <div class="team-persona__body">
+          <h2><a href="">Titulo</a></h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis
+            atque eligendi numquam aliquid explicabo dolorem totam minima nemo
+            corrupti! Unde, adipisci. Perspiciatis distinctio possimus
+            exercitationem accusantium debitis iste vero!
+          </p>
+        </div>
+      </div>
+      <div class="team-persona">
+        <div class="team-persona__header">
+          <img
+            src="https://s3.amazonaws.com/thumbnails.venngage.com/template/bcf804f5-e6b0-4389-8c44-d64482f922dc.png"
+          />
+        </div>
+        <div class="team-persona__body">
+          <h2><a href="">Titulo</a></h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nobis
+            atque eligendi numquam aliquid explicabo dolorem totam minima nemo
+            corrupti! Unde, adipisci. Perspiciatis distinctio possimus
+            exercitationem accusantium debitis iste vero!
+          </p>
+        </div>
+      </div>
+      <div class="team-persona">
+        <div class="team-persona__header">
+          <img
+            src="https://s3.amazonaws.com/thumbnails.venngage.com/template/bcf804f5-e6b0-4389-8c44-d64482f922dc.png"
+          />
+        </div>
+        <div class="team-persona__body">
           <h2><a href="">Titulo</a></h2>
           <hr />
           <p>

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: bisque;
+  height: 50px;
+}
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  margin: 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(7, 5, 88);
+  color: antiquewhite;
+  justify-content: space-between;
+  padding: 15px;
+}
+.caja {
+  height: 200px;
+
+  border: 2px solid black;
+}
+.caja img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#news {
+  margin: auto;
+  margin-top: 30px;
+  height: 720px;
+  width: 900px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.news-noticia {
+  border: 3px solid black;
+  height: 320px;
+  width: 400px;
+  padding: 10px;
+}
+
+.news-noticia__header {
+  height: 170px;
+  width: 400px;
+}
+
+.news-noticia__header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.news-noticia__body h2 {
+  margin: 10px;
+}
+.news-noticia__body p {
+  margin: 10px;
+}
+
+.services-servicio {
+  border: 3px solid blue;
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+}
+.services-servicio__header {
+  height: 170px;
+  width: 350px;
+}
+
+.services-servicio__header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.services-servicio__body h2 {
+  margin: 10px;
+}
+.services-servicio__body p {
+  margin: 10px;
+}
+
+#services {
+  margin: 30px auto;
+
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-persona {
+  border: 3px solid blue;
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+}
+.team-persona__header {
+  height: 170px;
+  width: 300px;
+}
+
+.team-persona__header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.team-persona__body h2 {
+  margin: 10px;
+}
+.team-persona__body p {
+  margin: 10px;
+}
+
+#team {
+  margin: 30px auto;
+
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
